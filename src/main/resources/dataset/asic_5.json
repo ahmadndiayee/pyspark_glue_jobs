@@ -1,0 +1,196 @@
+{
+  "count": 5,
+  "records": [
+    {
+      "sequence": 1439,
+      "start_date": "2021-06-16 06:45:48.684",
+      "identifier": "018dd5b2c92617616867311cdac3dff214aad219f1c9f276c790eed36cd5a13f",
+      "names": [
+        {
+          "given_name": "Search1439",
+          "other_given_names": "User1439",
+          "surname": "User1439",
+          "type": "legal"
+        }
+      ],
+      "entitlements": [
+        {
+          "identifiers": [
+            {
+              "identifier": "036774664577610",
+              "status_histories": [
+                {
+                  "status": "active",
+                  "start_date": "2021-06-16 06:45:48.684"
+                }
+              ]
+            }
+          ],
+          "status_histories": [
+            {
+              "status": "active",
+              "start_date": "2021-06-16 06:45:48.684"
+            }
+          ]
+        }
+      ],
+      "year_of_birth": 2000,
+      "month_of_birth": 4,
+      "day_of_birth": 2
+    },
+    {
+      "sequence": 1440,
+      "start_date": "2021-06-16 06:45:48.684",
+      "identifier": "5591b36ae66377c93bf2cdcec73300785494c692b4f6f102474727ac340d038c",
+      "names": [
+        {
+          "given_name": "Search1440",
+          "other_given_names": "User1440",
+          "surname": "User1440",
+          "type": "legal"
+        }
+      ],
+      "entitlements": [
+        {
+          "identifiers": [
+            {
+              "identifier": "036900150387119",
+              "status_histories": [
+                {
+                  "status": "active",
+                  "start_date": "2021-06-16 06:45:48.684"
+                }
+              ]
+            }
+          ],
+          "status_histories": [
+            {
+              "status": "active",
+              "start_date": "2021-06-16 06:45:48.684"
+            }
+          ]
+        }
+      ],
+      "year_of_birth": 2000,
+      "month_of_birth": 4,
+      "day_of_birth": 2,
+      "place_of_birth": {
+        "country_of_birth": "AU"
+      }
+    },
+    {
+      "sequence": 1441,
+      "start_date": "2021-06-16 06:45:48.684",
+      "identifier": "b90ad9e89840e557f8952ed10af7eabe443b5c369b3153fba91a6b7b3a9a7cce",
+      "names": [
+        {
+          "given_name": "Search1441",
+          "other_given_names": "User1441",
+          "surname": "User1441",
+          "type": "legal"
+        }
+      ],
+      "entitlements": [
+        {
+          "identifiers": [
+            {
+              "identifier": "036641996582743",
+              "status_histories": [
+                {
+                  "status": "active",
+                  "start_date": "2021-06-16 06:45:48.684"
+                }
+              ]
+            }
+          ],
+          "status_histories": [
+            {
+              "status": "active",
+              "start_date": "2021-06-16 06:45:48.684"
+            }
+          ]
+        }
+      ],
+      "year_of_birth": 2000,
+      "month_of_birth": 4,
+      "day_of_birth": 2
+    },
+    {
+      "sequence": 1442,
+      "start_date": "2021-06-16 06:45:48.685",
+      "identifier": "5eeb655feb9ee88d80438c03be518825ca058a6721436d5c0f8ac839e32e3ec7",
+      "names": [
+        {
+          "given_name": "Search1442",
+          "other_given_names": "User1442",
+          "surname": "User1442",
+          "type": "legal"
+        }
+      ],
+      "entitlements": [
+        {
+          "identifiers": [
+            {
+              "identifier": "036148342871389",
+              "status_histories": [
+                {
+                  "status": "active",
+                  "start_date": "2021-06-16 06:45:48.684"
+                }
+              ]
+            }
+          ],
+          "status_histories": [
+            {
+              "status": "active",
+              "start_date": "2021-06-16 06:45:48.684"
+            }
+          ]
+        }
+      ],
+      "year_of_birth": 2000,
+      "month_of_birth": 4,
+      "day_of_birth": 2,
+      "place_of_birth": {
+        "country_of_birth": "AU"
+      }
+    },
+    {
+      "sequence": 1443,
+      "start_date": "2021-06-16 06:45:48.685",
+      "identifier": "eec9fc489118000f9e294c3e57b5b3baec697232229503d06ad15c0a0e08a30c",
+      "names": [
+        {
+          "given_name": "Search1443",
+          "other_given_names": "User1443",
+          "surname": "User1443",
+          "type": "legal"
+        }
+      ],
+      "entitlements": [
+        {
+          "identifiers": [
+            {
+              "identifier": "036780790058510",
+              "status_histories": [
+                {
+                  "status": "active",
+                  "start_date": "2021-06-16 06:45:48.685"
+                }
+              ]
+            }
+          ],
+          "status_histories": [
+            {
+              "status": "active",
+              "start_date": "2021-06-16 06:45:48.685"
+            }
+          ]
+        }
+      ],
+      "year_of_birth": 2000,
+      "month_of_birth": 4,
+      "day_of_birth": 2
+    }
+  ]
+}
