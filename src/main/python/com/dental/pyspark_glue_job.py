@@ -1,3 +1,5 @@
+import os
+
 from pyspark.sql.functions import col, explode, lit, from_json, struct, collect_list
 from pyspark.sql import SparkSession
 import configparser
@@ -6,17 +8,26 @@ from pyspark.sql.types import StructType, ArrayType
 
 CONF_FILE = '/home/ahmad/IdeaProjects/pyspark_glue_jobs/src/main/resources/config.ini'
 
+config = configparser.ConfigParser()
+config.read(os.path.expanduser("~/.aws/credentials"))
+access_id = config.get("glue_jobs", "aws_access_key_id")
+access_key = config.get("glue_jobs", "aws_secret_access_key")
+
 spark = SparkSession.builder \
-    .appName("Melbourne") \
+    .appName("GLUE_JOBS") \
     .master("local[*]") \
     .config("spark.sql.legacy.timeParserPolicy", "LEGACY") \
+    .config("spark.hadoop.fs.s3a.access.key", access_id) \
+    .config("spark.hadoop.fs.s3a.secret.key", access_key) \
+    .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem") \
     .getOrCreate()
 
 
-config = configparser.ConfigParser()
+
+
+
 config.read(CONF_FILE)
 input_location = config.get("paths", 'input')
-
 file = spark.read.json(input_location)
 
 count = file.count()
@@ -97,7 +108,6 @@ def process_data(df):
     return df
 
 
-
 def main():
     df = get_nested_columns(file)
     df = process_data(df)
@@ -109,6 +119,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
