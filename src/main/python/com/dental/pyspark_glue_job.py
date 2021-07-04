@@ -23,9 +23,6 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 
-
-
-
 config.read(CONF_FILE)
 input_location = config.get("paths", 'input')
 file = spark.read.json(input_location)
@@ -96,8 +93,6 @@ def process_data(df):
         col("sequence"),
         col("start_date"),
         col("identifier"),
-        col("names"),
-        col("entitlements"),
         col("YearOfBirth"),
         col("MonthOfBirth"),
         col("DayOfBirth")
@@ -112,7 +107,7 @@ def main():
     df = get_nested_columns(file)
     df = process_data(df)
     output_location = config.get("paths", 'output')
-    file.coalesce(1).write.json(output_location)
+    df.coalesce(1).write.json(output_location)
     df.printSchema()
     # file.show()
 
