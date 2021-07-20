@@ -1,7 +1,8 @@
 import pytest
 from pyspark.sql.types import StructType, StructField, StringType, LongType, ArrayType
 from src.main.python.com.dental.pyspark_glue_job import *
-from chispa.dataframe_comparer import *
+from src.main.python.chispa.dataframe_comparer import *
+
 import configparser
 
 CONF_FILE = '/Users/macbookpro/IdeaProjects/pyspark_glue_jobs/src/test/resources/config.ini'
