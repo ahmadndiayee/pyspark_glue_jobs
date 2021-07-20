@@ -74,7 +74,7 @@ def process_data(df):
                     col("entitlements_status_histories_status").alias("status"),
                     col("entitlements_status_histories_start_date").alias("start_date"),
                 ).alias("status_histories")
-            ).alias("identifier"),
+            ).alias("identifiers"),
             struct(
                 col("status").alias("status"),
                 col("start_date").alias("start_date")
@@ -117,13 +117,9 @@ def get_nested_output(df):
 def main():
     df = get_nested_columns(file)
     df = process_data(df)
-    df.printSchema()
-    output_location = config.get("paths", 'output')
-    # df.coalesce(1).write.json("/Users/macbookpro/IdeaProjects/pyspark_glue_jobs/src/main/resources/dataset/output/text")
     df = get_nested_output(df)
-    df.printSchema()
-    df.coalesce(1).write.json("/Users/macbookpro/IdeaProjects/pyspark_glue_jobs/src/main/resources/dataset/output/text")
-    # file.show(10)
+    output_location = config.get("paths", 'output')
+    df.coalesce(1).write.json(output_location)
 
 
 if __name__ == '__main__':
